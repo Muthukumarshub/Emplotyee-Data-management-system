@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee main page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            background: url("https://www.codingnepalweb.com/demos/create-glassmorphism-login-form-html-css/hero-bg.jpg"), #000;
+        }
+        .outer-container {
+            padding: 40px;
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start; /* Align items to the top */
+        }
+
+        .container {
+            position: relative;
+            width: auto; /* Adjusted width for smaller containers */
+            vertical-align: top; /* Align containers to the top */
+            text-align: center; /* Center the text and image */
+            color: aliceblue;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 300px; /* Set a fixed width for smaller images */
+            height: 300px; /* Set a fixed height for smaller images */
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .container:hover .image {
+            opacity: 0.3;
+        }
+
+        .container:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: #04AA6D;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+
+        button {
+            margin: 5px; /* Add some margin between buttons */
+            padding: 10px 20px; 
+            font-size: 20px;/* Add some padding to the buttons */
+            color: black;
+            background: linear-gradient(65deg,rgb(117, 117, 255),rgb(184, 255, 184));
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        button a:hover {
+            text-decoration: underline;
+        }
+        #ibm{
+            font-size: 50px;
+            font-weight: 600;
+            color: blanchedalmond;
+            margin-top: 80px;
+            margin-bottom: 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<p id="ibm">IBM TECH PARK</p>
+<div class="outer-container">
+    <div class="container">
+        <h3>Admin</h3> <!-- Added label for Admin -->
+        <img src="adm.png" alt="Admin Avatar" class="image">
+        <div class="middle">
+            <button><a href="A-R.html">Register</a></button>
+            <button><a href="admin.html">Login</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <h3>Employee</h3> <!-- Added label for Employee -->
+        <img src="emp.png" alt="Employee Avatar" class="image">
+        <div class="middle">
+            <button><a href="U-R.html">Register</a></button>
+            <button><a href="user.html">Login</a></button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
